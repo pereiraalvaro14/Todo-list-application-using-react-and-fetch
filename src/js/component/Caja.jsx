@@ -37,9 +37,6 @@ const Caja = () => {
 		}
 	};
 	const DeleteItems = (indexItem) => {
-		// let newTable = setTable((prevState) =>
-		// 	prevState.filter((f, index) => index !== indexItem)
-		// );
 		let newTable = table.filter((t, i) => i !== indexItem);
 		setTable(newTable);
 		updateDb(newTable);
